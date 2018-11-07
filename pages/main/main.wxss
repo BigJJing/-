@@ -1,0 +1,52 @@
+/* pages/main/main.wxss */
+.container-box{
+  background-color: #efeff4;
+  height: 100vh;  /*视口被均分为100单位的vh,相当于height:100% */
+}
+
+.img-box{
+  padding: 32rpx;
+  background-color: #fff;
+  border:1px solid red;
+  position: relative;
+}
+.img-box image{
+  width:686rpx;
+  height: 686rpx;
+  background-color: #f9f9f9;
+}
+
+.input-row{
+  display:flex;
+  align-items: center;
+  margin:30rpx;
+  border:1px solid blue;
+  height: 88rpx;
+  padding: 0 32rpx;
+  background-color: #fff;
+  font-size:34rpx;
+  color:#000;
+}
+.input-row input{
+  margin-left:50rpx;
+  border:1px solid #ccc;
+  flex:1;
+}
+.btn{
+  width:686rpx;
+  margin:60rpx auto;
+}
+.mask{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 0;
+}
+.canvasH{
+  height: 686rpx;
+  width:686rpx;
+  background:red;
+}

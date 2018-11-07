@@ -1,0 +1,20 @@
+
+<View class="container-box">
+  <View class="img-box">
+    <image bindtap="previewImg" mode="scaleToFill" src="{{imagePath}}"></image>
+  </View>
+  <form bindsubmit="formSubmit">
+    <View class="input-row">
+      <label>网址</label>
+      <input name="url" value='' type="text" maxlength='255' placeholder='{{placeholder}}' />
+    </View>
+    <button formType="submit" class="btn" type="primary">生成二维码</button>
+  </form>
+</View>
+<!--
+<View hidden="{{maskHidden}}" class="mask"></View>
+-->
+<View class="canvas-box">
+  <!-- 二维码放置处 -->
+  <canvas hidden="{{canvasHidden}}" class="canvasH" canvas-id='mycanvas' />
+</View>
